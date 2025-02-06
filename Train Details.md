@@ -1,6 +1,6 @@
 <h1>Train Schedules</h1>
 
-<!----------------------------------------------------------------------------Ajmer Expresss---------------------------------------------------->
+<!----------------------------------------------------------------------------Ajmer Expresss (16210)---------------------------------------------------->
 <details>
   <summary><h3>Ajmer Express (16210)</h3></summary>
   <p><b>Days</b>:- Tuesday, Thursday</p>
@@ -200,3 +200,102 @@
       </tbody>
   </table>
 </details>
+
+<!----------------------------------------------------------------------------Udyan Exp (11302)---------------------------------------------------->
+<details>
+  <summary><h3>Udyan Exp (11302)</h3></summary>
+  <p><b>Days</b>:- Daily</p>
+  <table>
+ <thead>
+      <th>Dept Time</th>
+      <th>From Station</th>
+      <th></th>
+      <th>To Station</th>
+      <th>Arrival Time</th>
+      <th>Sleeper Seat</th>
+      <th>Price</th>
+      <th>3A Seat</th>
+      <th>Price</th>
+      <th>2A Seat</th>
+      <th>Price</th>
+      <th>1A Seat</th>
+      <th>Price</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>08:40pm</td>
+      <td>KSR Bengaluru - SBC</td>
+      <td>-</td>
+      <td>C Shivaju Mah T - CSMT</td>
+      <td>08:15pm</td>
+      <td>181</td>
+      <td>530</td>
+      <td>86</td>
+      <td>1425</td>
+      <td>29</td>
+      <td>2050</td>
+      <td>14</td>
+      <td>3465</td>
+    </tr>
+    <tr>
+      <td>08:40pm</td>
+      <td>KSR Bengaluru - SBC</td>
+      <td>-</td>
+      <td>Pune Jn - Pune</td>
+      <td>04:05pm - 04:10pm</td>
+      <td>237</td>
+      <td>475</td>
+      <td>86</td>
+      <td>1275</td>
+      <td>29</td>
+      <td>1825</td>
+      <td>14</td>
+      <td>3080</td>
+    </tr>
+  </tbody>
+  </table>
+</details>
+
+<!-----
+
+<details>
+  <summary><h3>TRAIN_NAME</h3></summary>
+  <p><b>Days</b>:- </p>
+  <table>
+ <thead>
+      <th>Dept Time</th>
+      <th>From Station</th>
+      <th></th>
+      <th>To Station</th>
+      <th>Arrival Time</th>
+      <th>Sleeper Seat</th>
+      <th>Price</th>
+      <th>3A Seat</th>
+      <th>Price</th>
+      <th>2A Seat</th>
+      <th>Price</th>
+      <th>1A Seat</th>
+      <th>Price</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  </table>
+</details>
+
+-->
