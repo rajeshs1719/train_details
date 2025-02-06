@@ -118,7 +118,7 @@
 
 <!----------------------------------------------------------------------------MRJ BKN SF Exp (20476)---------------------------------------------------------->
 <details>
-  <summary><h3>-MRJ BKN SF Exp (20476)</h3></summary>
+  <summary><h3>MRJ BKN SF Exp (20476)</h3></summary>
   <p><b>Days</b>:- Tuesday</p>
   <table>
  <thead>
