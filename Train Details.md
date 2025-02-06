@@ -19,6 +19,15 @@
       <th>Price</th>
       <th>1A Seat</th>
       <th>Price</th>
+      <th></th>
+      <th>Sleeper Seat</th>
+      <th>Price</th>
+      <th>3A Seat</th>
+      <th>Price</th>
+      <th>2A Seat</th>
+      <th>Price</th>
+      <th>1A Seat</th>
+      <th>Price</th>
     </thead>
       <tbody>
         <tr>
@@ -35,6 +44,8 @@
           <td>3120</td>
           <td>2</td>
           <td>5325</td>
+          <td rowspan = 6></td>
+          <td>something</td>
         </tr>
         <tr>
           <td>07:10pm</td>
