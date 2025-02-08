@@ -32,14 +32,26 @@ let Train_Schedules = {
     "Jodhpur Exp (16508)": {
         "Days": "Monday and Wednesday",
         "Routes": [
-            ["10:20pm", "KSR Bengaluru - SBC", "-", "Jodhpur JN - JU", "02:15pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["10:20pm", "KSR Bengaluru - SBC", "-", "Marwar JN - MJ", "12:05pm - 12:10pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["10:20pm", "KSR Bengaluru - SBC", "-", "Pune Jn - PUNE", "06:45pm - 06:50pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["10:20pm", "KSR Bengaluru - SBC", "-", "Ahmedabad Jn - ADI", "05:30am - 05:35am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["06:45pm - 06:50pm", "Pune Jn - PUNE", "-", "Jodhpur JN - JU", "02:15pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["06:45pm - 06:50pm", "Pune Jn - PUNE", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "Jodhpur JN - JU", "02:15pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
-            ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            ["10:20pm", "KSR Bengaluru - SBC", "-", "Jodhpur JN - JU", "02:15pm", 120 , 780 , 120 ,2060  , 53 , 3000 , 2 ,5120  ,494,780, 16, 2060, 8, 3000, , 5120],
+            ["10:20pm", "KSR Bengaluru - SBC", "-", "Marwar JN - MJ", "12:05pm - 12:10pm", 120 , 760 , 120 , 2015 ,53 ,2930  , 2 ,5000  ,49 , 760, 16, 2015, 8, 2930,,5000],
+            ["10:20pm", "KSR Bengaluru - SBC", "-", "Pune Jn - PUNE", "06:45pm - 06:50pm", 148 ,495 , 126 ,1335, 59,1915  ,2  , 3204 , 49, 495, 16,1335 ,8 ,1915 ,,3240],
+            ["10:20pm", "KSR Bengaluru - SBC", "-", "Ahmedabad Jn - ADI", "05:30am - 05:35am", 134 , 665 , 122 , 1775 , 55 , 2575 , 2 , 4380 , 49, 665, 16,1775 ,8 ,2575 ,,4380],
+            ["06:45pm - 06:50pm", "Pune Jn - PUNE", "-", "Jodhpur JN - JU", "02:15pm",14  , 510 , 4 , 1370 , 4 , 1970 , "WL 1" , 3330 , 49, 510, 16, 1370, 8, 1970,,3330],
+            ["06:45pm - 06:50pm", "Pune Jn - PUNE", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm", 14 , 480 , 4 , 1300 , 4 , 1865 , "WL 1" , 31445 , 49, 480, 16, 1300, 8, 1865,,3145],
+            ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "Jodhpur JN - JU", "02:15pm", 14 , 275 , 2 , 745 , 2 ,1050  , "WL 1" ,1765  ,49 , 275, 16, 745, 8,1050 ,,1765],
+            ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm", 14 , 230 , 2 , 620 , 2 , 880 ,  , 1465 ,49 ,230 ,16 ,620 ,8 ,220 ,,1465],
+            // ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+        ]
+    },
+    "Ypr Jp Exp (20667)": {
+        "Days": "Thursday",
+        "Routes": [
+            ["11:30am", "Yesvantpur Jn - YRP", "-", "Jaipur - JP", "05:25am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            ["11:30am", "Yesvantpur Jn - YRP", "-", "Ajmer - AII", "02:55am - 03:05am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            ["11:30am", "Yesvantpur Jn - YRP", "-", "Pune Jn - PUNE", "07:50am - 07:55am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            ["07:50am - 07:55am", "Pune Jn - PUNE", "-","Jaipur - JP", "05:25am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            ["07:50am - 07:55am", "Pune Jn - PUNE", "-", "Ajmer - AII", "02:55am - 03:05am",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
+            // ["05:30am - 05:35am", "Ahmedabad Jn - ADI", "-", "MARWAR JN - MJ", "12:05pm - 12:10pm",  ,  ,  ,  ,  ,  ,  ,  , , , , , , ,,],
         ]
     },
 
