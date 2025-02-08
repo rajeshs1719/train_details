@@ -6,40 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Schedules</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
             text-align: center;
         }
 
         h1 {
-            color: #333;
+            color: #2c3e50;
         }
 
-        details {
+        /* Train Schedule Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
             background: white;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 10px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling Details Section */
+        details {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
             padding: 10px;
-            width: 80%;
-            transition: all 0.3s ease-in-out;
+            cursor: pointer;
         }
 
-        details:hover {
-            transform: scale(1.02);
-        }
-
-        summary {
+        details summary {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #2c3e50;
-            cursor: pointer;
+            color: #007bff;
             padding: 10px;
+            cursor: pointer;
+            outline: none;
         }
 
+        details[open] summary {
+            color: #0056b3;
+        }
+
+        /* Scrollable Table Container */
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -50,31 +70,42 @@
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
+            white-space: nowrap;
         }
 
         th {
             background-color: #007bff;
             color: white;
+            font-size: 14px;
         }
 
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
         }
 
         tr:hover {
-            background-color: #dfe6e9;
+            background-color: #f1f1f1;
         }
 
-        p {
-            font-size: 1rem;
-            color: #555;
+        /* Responsive Table */
+        @media screen and (max-width: 768px) {
+            .table-container {
+                overflow-x: scroll;
+                display: block;
+            }
+
+            table {
+                width: 900px; /* Ensuring proper alignment on small screens */
+            }
         }
     </style>
 </head>
 
 <body>
-    <script src="script.js"></script>
     <h1>Train Schedules</h1>
+    <div class="container">
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
