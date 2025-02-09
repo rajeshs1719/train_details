@@ -76,7 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <thead>
                     <tr>
                         <th>Dept Time</th>
-                        <th>From Station</th>
+                        <th> <pre>
+                        From
+                        Station
+                        </pre>
+                        </th>
                         <th></th>
                         <th>To Station</th>
                         <th>Arrival Time</th>
