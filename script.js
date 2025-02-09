@@ -84,19 +84,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         <th>Arrival <br> Time</th>
                         <th>Sleeper <br> Seat</th>
                         <th>Price</th>
-                        <th>3A Seat</th>
+                        <th>3A<br> Seat</th>
                         <th>Price</th>
-                        <th>2A Seat</th>
+                        <th>2A <br>Seat</th>
                         <th>Price</th>
-                        <th>1A Seat</th>
+                        <th>1A <br>Seat</th>
                         <th>Price</th>
-                        <th>Sn. Sleeper Seat</th>
+                        <th>Sn.<br> Sleeper Seat</th>
                         <th>Price</th>
-                        <th>Sn. 3A Seat</th>
+                        <th>Sn.<br> 3A Seat</th>
                         <th>Price</th>
-                        <th>Sn. 2A Seat</th>
+                        <th>Sn.<br> 2A Seat</th>
                         <th>Price</th>
-                        <th>Sn. 1A Seat</th>
+                        <th>Sn 1A <br>Seat</th>
                         <th>Price</th>
                     </tr>
                 </thead>
