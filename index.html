@@ -4,125 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train Schedules</title>
+    <title>important links</title>
     <style>
-        /* General Page Styling */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #0056b3;
+            --background-dark: #121212;
+            --text-dark: #ffffff;
+            --card-dark: #1e1e1e;
+            --border-dark: #444;
+            --shadow-dark: rgba(0, 0, 0, 0.3);
+            --link-dark: #087efb;
+        }
+
+        /* Light Mode Variables */
+        .light-mode {
+            --background-dark: #f4f4f4;
+            --text-dark: #333;
+            --card-dark: #ffffff;
+            --border-dark: #ccc;
+            --shadow-dark: rgba(0, 0, 0, 0.1);
+            --link-dark: #0056b3;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            transition: background 0.3s, color 0.3s;
         }
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        /* Main Container */
-        .container {
-            width: 95%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Details Section */
-        details {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 10px 0;
-            padding: 10px;
-            transition: 0.3s ease-in-out;
-        }
-
-        details:hover {
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        summary {
-            font-size: 1.2rem;
+        .toggle-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            padding: 10px 15px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 16px;
             font-weight: bold;
-            color: #007bff;
-            padding: 10px;
+            border-radius: 8px;
             cursor: pointer;
-            outline: none;
+            transition: background 0.3s;
+            box-shadow: 0 4px 8px var(--shadow-dark);
+            z-index: 1000;
+        }
+
+        .toggle-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        details {
+            background: var(--card-dark);
+            color: var(--text-dark);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow-dark);
+            border: 1px solid var(--border-dark);
+        }
+
+        details summary {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #b8c1cb;
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.3s;
+        }
+
+        details summary h2 {
+            margin: 10px;
+        }
+
+        details summary:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .container {
+            margin: 70px 0;
         }
 
         details[open] summary {
-            color: #0056b3;
+            background: var(--secondary-color);
+            color: white;
         }
 
-        /* Table Wrapper - Ensures the table fits well */
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-        }
-
-        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
-            min-width: 900px; /* Ensures proper readability */
+            background: var(--card-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px var(--shadow-dark);
         }
 
-        th, td {
-            border: 1px solid #ddd;
+        details table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: var(--card-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px var(--shadow-dark);
+            table-layout: fixed;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--border-dark);
             padding: 12px;
-            text-align: center;
-            font-size: 14px;
-            white-space: nowrap; /* Prevents text from breaking */
+            text-align: left;
         }
 
         th {
-            background-color: #007bff;
+            background-color: var(--primary-color);
             color: white;
-            font-size: 14px;
-            text-transform: uppercase;
         }
 
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
+        td a {
+            color: var(--link-dark);
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        tr:hover {
-            background-color: #e3f2fd;
-            transition: 0.2s ease-in-out;
+        td a:hover {
+            text-decoration: underline;
         }
 
-        /* Responsive Design */
+        button {
+            display: block;
+        }
+
+        details table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: var(--card-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px var(--shadow-dark);
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        details {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        /* Responsive Styling for Small Screens */
         @media screen and (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 10px;
-            }
-
-            th, td {
-                font-size: 12px;
-                padding: 8px;
+            details table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1>Train Schedules</h1>
-    <div class="container">
-        <script src="script.js"></script>
-    </div>
+    <button class="toggle-btn" id="toggleMode">🌙 Light Mode</button>
+
+    <div class="container"></div>
+
+    <script type="module" src="format.js"></script>
 </body>
 
 </html>
